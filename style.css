@@ -26,9 +26,9 @@ body {
 path {
     stroke: #ffffff;
     fill: #ffffff;
-    stroke-dasharray: 10000;
+    stroke-dasharray: 20000;
     opacity: 10;
-    animation: animate 7s ease-in;
+    animation: animate 10s ease-in;
     animation-delay: 0s;
 }
 
@@ -36,12 +36,12 @@ path {
     0% {
         opacity: 0;
         fill: none;
-        stroke-dashoffset: 10000;
+        stroke-dashoffset: 20000;
     }
     30% {
         opacity:10;
         fill: none;
-        stroke-dashoffset: 10000;
+        stroke-dashoffset: 20000;
     }
 
     90%{
