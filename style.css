@@ -1,0 +1,57 @@
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url(assets/images/berkskyline.jpg);
+    background-color: black;
+    background-size: cover;
+    height: 100vh;
+    display: table;
+}
+
+.wrapper {
+    position: absolute;
+    top: 20%;
+    left: 50%; 
+    transform: translate(-80%, -50%);
+    width: 60%;
+}
+
+path {
+    stroke: #ffffff;
+    fill: #ffffff;
+    stroke-dasharray: 1850;
+    opacity: 10;
+    animation: animate 7s ease-in;
+    animation-delay: 0s;
+    /*cubic-bezier(0,0.23,1,.1);*/
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1850;
+    }
+    30% {
+        opacity:10;
+        fill: none;
+        stroke-dashoffset: 1850;
+    }
+
+    90%{
+        fill: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
