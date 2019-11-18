@@ -9,7 +9,7 @@ body {
     padding: 0;
     text-align: center;
     /*background-image: url(assets/images/berkskyline.jpg);*/
-    background-color: black;
+    background-color: goldenrod;
     background-size: cover;
     height: 100vh;
     display: table;
@@ -26,9 +26,9 @@ body {
 path {
     stroke: #ffffff;
     fill: #ffffff;
-    stroke-dasharray: 20000;
+    stroke-dasharray: 5000;
     opacity: 10;
-    animation: animate 10s ease-in;
+    animation: animate 7s ease-in;
     animation-delay: 0s;
 }
 
@@ -36,12 +36,12 @@ path {
     0% {
         opacity: 0;
         fill: none;
-        stroke-dashoffset: 20000;
+        stroke-dashoffset: 5000;
     }
     30% {
         opacity:10;
         fill: none;
-        stroke-dashoffset: 20000;
+        stroke-dashoffset: 5000;
     }
 
     90%{
@@ -53,4 +53,5 @@ path {
         fill: rgba(255, 255, 255, 1);
         stroke-dashoffset: 0;
     }
-}
+    
+}*
