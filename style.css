@@ -1,17 +1,16 @@
 html {
+    font-size: 16px;
     margin: 0;
     padding: 0;
     width: 100%;
 }
 
 body {
-    position: absolute;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: goldenrod;
     background-size: cover;
-    height: 100vh;
 }
 
 .wrapper {
@@ -38,7 +37,7 @@ li {
     text-decoration: none;
     font-family: 'Lato', cursive;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 100%;
   }
 
   li a:hover{
