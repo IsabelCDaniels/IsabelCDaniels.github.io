@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: goldenrod;
+    background-color: #342239;
     height: 100vh;
     width: 100vh;
 }
@@ -49,7 +49,6 @@ li {
     top: 10px;
     left: 150px;
     animation-delay: 0;
-    animation: navbarani 1s ease-in 1 forward fill-mode;
     z-index: 0;
 }
 
@@ -92,7 +91,7 @@ svg{
     stroke-dasharray: 5000;
     stroke-dashoffset: 5000;
     opacity: 10;
-    animation: animate 15s ease-in forwards;
+    animation: draw 15s ease-in forwards;
     
 }
 
@@ -106,7 +105,7 @@ svg{
         left: -200px;
     }
 }
-@keyframes animate {
+@keyframes draw {
     0% {
         stroke-width: 1px;
         fill: none;
@@ -124,7 +123,6 @@ svg{
     }
 
     100% {
-        /*fill: rgba(255, 255, 255, 1);*/
         stroke-dashoffset: 0;
         stroke-width: 1px;
     }
