@@ -1,25 +1,22 @@
-html {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
 
 body {
-    position: absolute;
     margin: 0;
     padding: 0;
-    text-align: center;
     background-color: goldenrod;
-    background-size: cover;
+    height: 100vh;
+    width: 100vh;
 }
 
 .wrapper {
-    position: relative;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%vh;
 }
 
 ul{
+    display: inline;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -34,11 +31,11 @@ li {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 30px;
     text-decoration: none;
     font-family: 'Lato', cursive;
     font-weight: lighter;
-    font-size: 80px;
+    font-size: 30px;
   }
 
   li a:hover{
@@ -46,11 +43,11 @@ li {
   }
 
 .navbar{
+    position: relative;
+    display: inline;
     position: fixed;
-    text-align: center;
-    top: 0;
-    left: 30px;
-    width: 100%;
+    top: 10px;
+    left: 150px;
     animation-delay: 0;
     animation: navbarani 1s ease-in 1 forward fill-mode;
     z-index: 0;
@@ -65,16 +62,18 @@ svg{
 
 #bird-container{
     position: absolute;
-    height: 50px;
-    width: 80px;
-    left: 200px;
-    top: 30px; 
+    width: 50px;
+    height: 150px;
+    left: 500px;
+    top: 100px; 
     opacity: 1;
 }
 
 #birds{
     position: relative;
-    width: 100%;
+    left: 400px;
+    top: -50px;
+    width: 200px;
     content: url("assets/images/birdsflying.gif");
     opacity: 0;
     z-index: -1;
@@ -82,7 +81,7 @@ svg{
 
 #bird-container:hover > #birds{
     animation: moveleft 4s forwards, linear;
-    opacity: 0;
+    opacity: 1;
 }
 
  path {
@@ -98,12 +97,12 @@ svg{
 
 @keyframes moveleft {
     0%{
-        left: 100px;
+        left: 300px;
         opacity: 1;
     }
     100%{
         opacity: 1;
-        left: -300px;
+        left: -800px;
     }
 }
 @keyframes animate {
