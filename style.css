@@ -37,7 +37,7 @@ li {
     text-decoration: none;
     font-family: 'Lato', cursive;
     font-weight: lighter;
-    font-size: 100%;
+    font-size: 15px;
   }
 
   li a:hover{
@@ -65,7 +65,7 @@ svg{
 #bird-container{
     position: absolute;
     height: 50px;
-    width: 15%;
+    width: 80px;
     left: 200px;
     top: 30px; 
     opacity: 1;
