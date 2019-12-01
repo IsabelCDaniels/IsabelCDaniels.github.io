@@ -8,50 +8,123 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    /*background-image: url(assets/images/berkskyline.jpg);*/
     background-color: goldenrod;
     background-size: cover;
     height: 100vh;
-    display: table;
 }
 
 .wrapper {
-    position: absolute;
-    top: -2%;
-    /*left: 50%; 
-    transform: translate(-80%, -50%);*/
+    position: relative;
     width: 100%;
 }
 
-path {
-    stroke: #ffffff;
-    fill: #ffffff;
-    stroke-dasharray: 5000;
-    opacity: 10;
-    animation: animate 7s ease-in;
-    animation-delay: 0s;
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
+li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Lato', cursive;
+    font-weight: lighter;
+    font-size: 100%;
+  }
+
+  li a:hover{
+    color: #342239;
+  }
+
+.navbar{
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 30px;
+    width: 100%;
+    animation-delay: 0;
+    animation: navbarani 1s ease-in 1 forward fill-mode;
+    z-index: 0;
+}
+
+svg{
+    position: absolute;
+    left: 0;
+    z-index: -2;
+    stroke-width: 1px;
+}
+
+#bird-container{
+    position: absolute;
+    height: 50px;
+    width: 15%;
+    left: 200px;
+    top: 30px; 
+    opacity: 1;
+}
+
+#birds{
+    position: relative;
+    width: 100%;
+    content: url("assets/images/birdsflying.gif");
+    opacity: 0;
+    z-index: -1;
+}
+
+#bird-container:hover > #birds{
+    animation: moveleft 4s forwards, linear;
+    opacity: 0;
+}
+
+ path {
+    stroke: #ffffff;
+    fill: #ffffff;
+    stroke-width: 1px;
+    stroke-dasharray: 5000;
+    stroke-dashoffset: 5000;
+    opacity: 10;
+    animation: animate 15s ease-in forwards;
+    
+}
+
+@keyframes moveleft {
+    0%{
+        left: 100px;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        left: -300px;
+    }
+}
 @keyframes animate {
     0% {
-        opacity: 0;
+        stroke-width: 1px;
         fill: none;
         stroke-dashoffset: 5000;
-    }
+        }
     30% {
-        opacity:10;
+        stroke-width: 1px;
         fill: none;
         stroke-dashoffset: 5000;
     }
 
     90%{
+        stroke-width: 1px;
         fill: rgba(255, 255, 255, 0);
     }
 
     100% {
-        opacity: 10;
-        fill: rgba(255, 255, 255, 1);
+        /*fill: rgba(255, 255, 255, 1);*/
         stroke-dashoffset: 0;
+        stroke-width: 1px;
     }
-    
-}*
+}
